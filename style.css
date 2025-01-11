@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+:root{
+    --primary-color: #006a50;
+    --light-primary-color: #c6e4d6;
+}
+
+.container {
+    max-width: 1300px;
+    width: 90%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+nav a{
+    border: 1px solid var(--primary-color);
+    padding: 8px 24px;
+    color: var(--primary-color);
+    border-radius: 4px;
+    font-weight: bold;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--light-primary-color);
+    padding: 60px;
+    border-radius: 25px;
+}
+
+.banner h3{
+    font-size: 40px;
+}
+
+.banner a{
+    background: var(--primary-color);
+    color: white;
+    padding: 8px 24px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 40px 0 30px;
+}
+
+.card_holder{
+    display: flex;
+    gap: 20px;
+}
+.card{
+    border-radius: 20px;
+    padding: 30px;
+}
+.Pcard{
+    border: 1px solid #ddd;
+    background-color: white;
+}
+.vision{
+    margin: 30px 0;
+}
+.v-card1{
+    background-color: #d5e1f5;
+}
+.v-card2{
+    background-color: #c6e4d6;
+}
+.v-card3{
+    background-color: #f7ebcf;
+}
+.v-card1, .v-card2, .v-card3{
+    width: calc(100%/3);
+}
+
+.v_btn{
+    color: white;
+    padding: 8px 24px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 20px 0 0;
+}
+
+.v-btn1{
+    background-color: #5490f5;
+}
+.v-btn2{
+    background-color: #089052;
+}
+.v-btn3{
+    background-color: #ffc239;
+}
+
+.testimonial{
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.testimonial p{
+    margin-bottom: 10px;
+}
+.testimonial .quote{
+    background-image: url('assets/quote-bg.png');
+    background-repeat: no-repeat;
+}
+.Opinion{
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+.Opinion table{
+    text-align: Left;
+    width: 100%;
+    border-collapse: collapse;
+}
+.Opinion button{
+    padding: 8px 24px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--light-primary-color);
+}
+.Opinion table th, td{
+    padding: 20px 20px;
+}
+.Opinion th{
+    background-color: var(--light-primary-color);
+}
+.news_holder{
+    margin-block: 30px;
+}
+.news{
+    background-color: #fff;
+    border-radius: 20px;    
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.news_card{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.news_card img{
+    border-radius: 20px;
+}
+.news_card p{
+    margin: 10px 0;
+}
+.news_card a{
+    background-color: var(--primary-color);
+    padding: 8px 24px;
+    color: #fff;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
