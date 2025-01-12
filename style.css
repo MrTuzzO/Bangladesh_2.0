@@ -22,7 +22,9 @@ body {
     width: 90%;
     margin: auto;
 }
-
+.card_title{
+    margin-block: 8px;;
+}
 nav {
     display: flex;
     justify-content: space-between;
