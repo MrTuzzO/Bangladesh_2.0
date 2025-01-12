@@ -5,11 +5,11 @@
     text-decoration: none;
 }
 
-body{
+body {
     background-color: #f5f5f5;
 }
 
-:root{
+:root {
     --primary-color: #006a50;
     --light-primary-color: #c6e4d6;
 }
@@ -27,14 +27,20 @@ nav {
     height: 80px;
 }
 
-nav a{
+nav a {
     border: 1px solid var(--primary-color);
     padding: 8px 24px;
     color: var(--primary-color);
     border-radius: 4px;
     font-weight: bold;
+    transition: .3s;
 }
-.banner{
+
+nav a:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+}   
+.banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,175 +49,296 @@ nav a{
     border-radius: 25px;
 }
 
-.banner h3{
+.banner h3 {
     font-size: 40px;
 }
 
-.banner a{
+.banner a {
     background: var(--primary-color);
     color: white;
     padding: 8px 24px;
     display: inline-block;
     border-radius: 4px;
     margin-top: 10px;
+    border: 1.5px solid var(--primary-color);
+    transition: .3s;
 }
 
-.title{
+.banner a:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.title {
     font-size: 25px;
     font-weight: bold;
     margin: 40px 0 30px;
 }
 
-.card_holder{
+.card_holder {
     display: flex;
     gap: 20px;
 }
-.card{
+
+.card {
     border-radius: 20px;
     padding: 30px;
 }
-.Pcard{
+
+.Pcard {
     border: 1px solid #ddd;
     background-color: white;
 }
-.vision{
+
+.vision {
     margin: 30px 0;
 }
-.v-card1{
+
+.v-card1 {
     background-color: #d5e1f5;
 }
-.v-card2{
+
+.v-card2 {
     background-color: #c6e4d6;
 }
-.v-card3{
+
+.v-card3 {
     background-color: #f7ebcf;
 }
-.v-card1, .v-card2, .v-card3{
+
+.v-card1,
+.v-card2,
+.v-card3 {
     width: calc(100%/3);
 }
 
-.v_btn{
+.v_btn {
     color: white;
     padding: 8px 24px;
     border-radius: 4px;
     display: inline-block;
     margin: 20px 0 0;
+    transition: .3s;
 }
 
-.v-btn1{
+
+.v-btn1 {
     background-color: #5490f5;
+    border: 2px solid #5490f5;
 }
-.v-btn2{
-    background-color: #089052;
-}
-.v-btn3{
-    background-color: #ffc239;
+.v-btn1:hover {
+    background-color: transparent;
+    color: #5490f5;
 }
 
-.testimonial{
+.v-btn2 {
+    background-color: #089052;
+    border: 2px solid #089052;
+}
+.v-btn2:hover {
+    background-color: transparent;
+    color: #089052;
+}
+
+.v-btn3 {
+    background-color: #ffc239;
+    border: 2px solid #ffc239;
+}
+.v-btn3:hover {
+    background-color: transparent;
+    color: #ffc239;
+}
+
+.testimonial {
     background-color: #fff;
     border: 1px solid #ddd;
 }
-.testimonial p{
+
+.testimonial p {
     margin-bottom: 10px;
 }
-.testimonial .quote{
+
+.testimonial .quote {
     background-image: url('assets/quote-bg.png');
     background-repeat: no-repeat;
 }
-.Opinion{
+
+.Opinion {
     padding: 20px;
     background-color: white;
     border-radius: 20px;
 }
-.Opinion table{
+
+.Opinion table {
     text-align: Left;
     width: 100%;
     border-collapse: collapse;
 }
-.Opinion button{
+
+.Opinion button {
     padding: 8px 24px;
     border: 1px solid #000;
     border-radius: 4px;
     cursor: pointer;
+    transition: .3s;
     background-color: var(--light-primary-color);
 }
-.Opinion table th, td{
+
+.Opinion button:hover {
+    background-color: transparent;
+}
+
+.Opinion table th,
+td {
     padding: 20px 20px;
 }
-.Opinion th{
+
+.Opinion th {
     background-color: var(--light-primary-color);
 }
-.news_holder{
+
+.news_holder {
     margin-block: 30px;
 }
-.news{
+
+.news {
     background-color: #fff;
-    border-radius: 20px;    
+    border-radius: 20px;
     padding: 30px;
     margin-bottom: 30px;
 }
-.news_card{
+
+.news_card {
     display: flex;
     gap: 30px;
     align-items: center;
 }
-.news_card img{
+
+.news_card img {
     border-radius: 20px;
 }
-.news_card p{
+
+.news_card p {
     margin: 10px 0;
 }
-.news_card a{
+
+.news_card a {
     background-color: var(--primary-color);
     padding: 8px 24px;
     color: #fff;
     margin-top: 10px;
     display: inline-block;
     border-radius: 4px;
+    border: 1.5px solid var(--primary-color);
+    transition: .3s;
 }
 
-#donatinon .card_holder{
+.news_card a:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+#donatinon .card_holder {
     justify-content: space-evenly;
     margin-block: 25px;
 }
 
-#donatinon .card p{
+#donatinon .card p {
     font-size: 40px;
     font-weight: bold;
 }
 
-#donatinon .card{
+#donatinon .card {
     background-color: white;
     border: 1px solid #ddd;
     padding: 30px 60px;
     transition: .3s;
 }
 
-#donatinon .card:hover{
+#donatinon .card:hover {
     background-color: var(--light-primary-color);
 }
 
-#donatinon form{
+#donatinon form {
     max-width: 800px;
     width: 100%;
     margin: auto;
     text-align: center;
 }
 
-#donatinon form input{
+#donatinon form input {
     width: 100%;
     height: 45px;
     border: 0;
     text-align: center;
 }
 
-#donatinon form button{
+#donatinon form button {
     padding: 10px 30px;
     background-color: var(--primary-color);
     color: #fff;
     border: 0;
     border-radius: 4px;
     margin-top: 20px;
+    transition: .3s;
+}
+#donatinon form button:hover {
+    background-color: #089052;
 }
 
+#newsletter {
+    text-align: center;
+    margin-block: 60px;
+    background-color: var(--light-primary-color);
+    padding: 70px;
+    border-radius: 20px;
+}
+
+#newsletter h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#newsletter form {
+    margin-block: 10px;
+}
+
+#newsletter form input {
+    padding: 15px;
+    width: 550px;
+    border: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#newsletter form button {
+    border: 0;
+    padding: 15px 30px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin-left: -4px;
+    transition: .3s;
+}
+
+#newsletter form button:hover {
+    background-color: #089052;
+}
+
+footer .container {
+    text-align: center;
+}
+
+footer hr {
+    width: 80%;
+    margin: 30px auto;
+    color: #fff;
+}
+
+footer .container div {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
